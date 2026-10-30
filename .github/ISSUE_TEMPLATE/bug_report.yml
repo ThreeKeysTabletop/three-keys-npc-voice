@@ -1,0 +1,33 @@
+name: Bug report
+description: Something in NPC Voice is wrong or broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What happened?, description: What did you expect instead? }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce, placeholder: "1. Control a token with a voice assigned\n2. ..." }
+    validations: { required: true }
+  - type: input
+    id: foundry
+    attributes: { label: Foundry version, placeholder: "14.369" }
+    validations: { required: true }
+  - type: input
+    id: system
+    attributes: { label: Game system and version, placeholder: "dnd5e 5.3.3" }
+  - type: input
+    id: module
+    attributes: { label: NPC Voice version, placeholder: "1.0.0" }
+    validations: { required: true }
+  - type: input
+    id: av
+    attributes: { label: A/V setup, placeholder: "Foundry built-in A/V (or LiveKit AVClient x.y), browser + OS, mic model" }
+    validations: { required: true }
+  - type: textarea
+    id: report
+    attributes: { label: Voice preset (exported JSON), description: Editor > Export JSON, if a custom preset is involved., render: json }
+  - type: textarea
+    id: console
+    attributes: { label: Console errors (F12), render: text }

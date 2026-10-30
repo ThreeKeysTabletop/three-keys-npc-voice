@@ -1,0 +1,29 @@
+.tknv-bar{position:fixed;top:6px;left:50%;transform:translateX(-50%);z-index:70;display:flex;gap:4px;align-items:center;flex-wrap:wrap;max-width:70vw;padding:4px 8px;border-radius:8px;background:rgba(20,14,30,.88);border:1px solid #6b4fa0;color:#eee;font-size:12px;box-shadow:0 2px 8px #0008}
+.tknv-bar button,.tknv-bar select{height:24px;line-height:22px;padding:0 8px;width:auto;flex:0 0 auto;font-size:12px;background:#2e2240;color:#ddd;border:1px solid #574475;border-radius:4px}
+.tknv-bar select{max-width:160px}
+.tknv-bar button.active{background:#d4af37;color:#1a1020;border-color:#d4af37;font-weight:bold}
+.tknv-bar button.on{background:#a33;color:#fff}
+.tknv-bar .tknv-title{font-weight:bold;color:#d4af37;margin-right:4px}
+.tknv-meter{display:inline-block;width:70px;height:8px;background:#000;border:1px solid #574475;border-radius:4px;overflow:hidden}
+.tknv-meter-fill{display:block;height:100%;width:0;background:linear-gradient(90deg,#3c3,#cc3);transition:width .05s}
+.tknv-meter-fill.hot{background:linear-gradient(90deg,#3c3,#c33)}
+.tknv-status{opacity:.8;min-width:40px}
+.tknv-editor .window-content{padding:0}
+.tknv-ed{display:flex;gap:8px;height:calc(100% - 44px);overflow:hidden}
+.tknv-list{flex:0 0 220px;overflow:auto;padding:6px;border-right:1px solid #8884}
+.tknv-list h4{margin:8px 0 2px;font-size:12px;border-bottom:1px solid #8884}
+.tknv-list .hint{font-size:11px;margin:0 0 4px;opacity:.75}
+.tknv-item{display:block;padding:2px 6px;border-radius:3px;cursor:pointer}
+.tknv-item.active{background:#d4af37;color:#1a1020}
+.tknv-form{flex:1;overflow:auto;padding:6px 10px}
+.tknv-form .form-group{display:flex;align-items:center;gap:6px;margin:2px 0}
+.tknv-form label{flex:0 0 150px}
+.tknv-form input[type=range]{flex:1}
+.tknv-form output{flex:0 0 48px;text-align:right}
+.tknv-editor footer{display:flex;flex-wrap:wrap;gap:4px;padding:6px}
+.tknv-editor footer button{flex:1 1 auto}
+.tknv-form fieldset{border:1px solid #8884;border-radius:4px;margin:4px 0;padding:2px 6px}
+.tknv-form legend{font-weight:bold;font-size:12px}
+.tknv-layer{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:11px;margin:2px 0}
+.tknv-layer input{width:58px;height:22px}
+.tknv-latency{font-size:11px;opacity:.8;margin:2px 0}

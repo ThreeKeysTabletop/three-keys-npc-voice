@@ -1,0 +1,42 @@
+{
+  "id": "three-keys-npc-voice",
+  "title": "Three Keys NPC Voice",
+  "description": "A live voice changer for GMs inside Foundry's built-in A/V: per-actor voice presets (pitch, growl, robot, radio, reverb, echo), auto-switching on token control, a quick preset bar with hotkeys and bypass, a preset editor and importable preset packs. Replaces Voicemod for Foundry A/V (not Discord).",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Three Keys Tabletop",
+      "url": "https://github.com/ThreeKeysTabletop"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/npc-voice.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "media": [
+    {
+      "type": "icon",
+      "url": "modules/three-keys-npc-voice/assets/icon.png"
+    }
+  ],
+  "url": "https://github.com/ThreeKeysTabletop/three-keys-npc-voice",
+  "bugs": "https://github.com/ThreeKeysTabletop/three-keys-npc-voice/issues",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "manifest": "https://github.com/ThreeKeysTabletop/three-keys-npc-voice/releases/latest/download/module.json",
+  "download": "https://github.com/ThreeKeysTabletop/three-keys-npc-voice/releases/download/v1.0.0/module.zip"
+}

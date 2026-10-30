@@ -1,0 +1,188 @@
+{
+  "TKNV": {
+    "Preset": {
+      "natural": "Natural",
+      "orc": "Orc",
+      "robot": "Robot / Construct",
+      "radio": "Radio / Sending",
+      "none": "none"
+    },
+    "Group": {
+      "builtin": "Built-in",
+      "custom": "Custom",
+      "pack": "{name} v{version} — {author}"
+    },
+    "Assign": {
+      "button": "NPC Voice",
+      "hint": "Choose the voice preset used when you control this token or speak as it. Leave as inherit to use the actor's voice.",
+      "voice": "Voice preset",
+      "inherit": "(none / inherit)",
+      "save": "Save",
+      "titleActor": "NPC Voice: {name}",
+      "titleToken": "NPC Voice (token): {name}",
+      "hudTip": "NPC Voice: {name}"
+    },
+    "Bar": {
+      "title": "Voice",
+      "slot": "Hotkey slot {n} (Alt+{n} by default)",
+      "more": "Pack voices…",
+      "bypass": "Bypass",
+      "bypassTip": "Bypass all effects (Alt+B)",
+      "monitorTip": "Self-monitor: hear your processed voice (use headphones; adds latency)",
+      "testTip": "Test mic: open the microphone without A/V to audition voices",
+      "editor": "Preset editor",
+      "meterTip": "Outgoing level",
+      "live": "Live",
+      "noMic": "No mic"
+    },
+    "Editor": {
+      "title": "NPC Voice Preset Editor",
+      "name": "Name",
+      "copyOf": "{name} (copy)",
+      "liveHint": "Changes are previewed live on your outgoing mic. Save to keep them.",
+      "use": "Use",
+      "save": "Save",
+      "saveAs": "Save as new",
+      "delete": "Delete",
+      "export": "Export JSON",
+      "import": "Import JSON / pack",
+      "untitled": "Untitled voice",
+      "removePack": "Remove pack",
+      "removePackConfirm": "Remove this preset pack from the world? Actors using its voices fall back to Natural.",
+      "latency": "Added latency for this voice: about {ms} ms.",
+      "layersHint": "Parallel voices mixed with the main one (e.g. an octave-down double or a sub layer). Level 0 turns a layer off.",
+      "layer": "Layer {n}"
+    },
+    "Field": {
+      "gain": "Input gain",
+      "pitch": "Pitch (semitones)",
+      "formant": "Formant shift (semitones)",
+      "filter": "Filter style",
+      "hp": "High-pass (Hz)",
+      "lp": "Low-pass (Hz)",
+      "peakFreq": "Presence freq (Hz)",
+      "peakGain": "Presence gain (dB)",
+      "drive": "Distortion / growl",
+      "ringFreq": "Ring-mod freq (Hz)",
+      "ringMix": "Ring-mod amount",
+      "reverb": "Reverb",
+      "reverbSize": "Reverb size (s)",
+      "delay": "Echo",
+      "delayTime": "Echo time (s)",
+      "feedback": "Echo feedback",
+      "mix": "Effect mix",
+      "tilt": "Tone tilt (dB)",
+      "lowShelf": "Low shelf 200 Hz (dB)",
+      "highShelf": "High shelf 4 kHz (dB)",
+      "notchFreq": "Notch freq (Hz, 0 = off)",
+      "notchQ": "Notch Q",
+      "growl": "Growl / throat rattle",
+      "growlRate": "Rattle rate (Hz)",
+      "vocoder": "Vocoder",
+      "carrier": "Vocoder carrier",
+      "carrierFreq": "Carrier pitch (Hz)",
+      "crushBits": "Bitcrush bits (0 = off)",
+      "crushRate": "Sample-rate reduce (x)",
+      "crushMix": "Bitcrush amount",
+      "breath": "Breath / air",
+      "breathTone": "Breath tone (Hz)",
+      "chorus": "Chorus",
+      "flanger": "Flanger",
+      "flangerRate": "Flanger rate (Hz)",
+      "phaser": "Phaser",
+      "phaserRate": "Phaser rate (Hz)",
+      "tremolo": "Tremolo",
+      "tremoloRate": "Tremolo rate (Hz)",
+      "vibrato": "Vibrato",
+      "vibratoRate": "Vibrato rate (Hz)",
+      "comb": "Comb filter",
+      "combTime": "Comb time (ms)",
+      "combFeedback": "Comb feedback",
+      "combLfo": "Comb sweep (Hz, gurgle)",
+      "reverbTone": "Reverb tone (dark ↔ bright)"
+    },
+    "Filter": {
+      "none": "Custom (use sliders)",
+      "telephone": "Telephone",
+      "radio": "Radio",
+      "cave": "Cave muffle"
+    },
+    "Keys": {
+      "slot": "Voice slot {n}",
+      "slotHint": "Switch to the Nth voice on the quick bar.",
+      "bypass": "Toggle voice bypass",
+      "toggleBar": "Show/hide voice bar"
+    },
+    "Notify": {
+      "switched": "Voice: {name}",
+      "monitorWarn": "Self-monitor is on. Use headphones to avoid feedback; you will hear yourself with a small delay.",
+      "micFail": "Could not open the microphone: {error}",
+      "packImported": "Imported preset pack {name} ({count} voices).",
+      "imported": "Imported {count} custom presets.",
+      "importFail": "Import failed: {error}",
+      "saved": "Preset saved.",
+      "gmOnly": "Only the GM can edit presets."
+    },
+    "Err": {
+      "notPack": "Not an NPC Voice preset pack.",
+      "packField": "Pack is missing \"{field}\".",
+      "packEmpty": "Pack has no presets.",
+      "presetName": "Every preset needs a name.",
+      "notPresets": "Not an NPC Voice preset or pack file."
+    },
+    "Settings": {
+      "enabled": {
+        "name": "Enable voice changer",
+        "hint": "Route your microphone through the voice chain when Foundry A/V opens it (this client)."
+      },
+      "allowPlayers": {
+        "name": "Allow players",
+        "hint": "Let players use the voice changer too (GM only by default)."
+      },
+      "showBar": {
+        "name": "Show quick preset bar",
+        "hint": "Show the voice bar with presets, bypass, meter and monitor."
+      },
+      "autoSwitch": {
+        "name": "Switch voice on token control",
+        "hint": "When you control a token, switch to its voice."
+      },
+      "switchOnChat": {
+        "name": "Switch voice on chat speaker",
+        "hint": "When you post a chat message as an actor or token, switch to its voice."
+      },
+      "releaseNatural": {
+        "name": "Release to Natural",
+        "hint": "Return to the Natural voice when no token is controlled or the token has no voice."
+      },
+      "disableProcessing": {
+        "name": "Disable browser voice processing while effects are on",
+        "hint": "Turns off echo cancellation, noise suppression and auto gain while a voice is active (they smear effects). Natural/bypass turns them back on."
+      },
+      "notifySwitch": {
+        "name": "Notify on voice switch",
+        "hint": "Show a notification when the voice changes."
+      }
+    },
+    "Carrier": {
+      "saw": "Saw (buzzy)",
+      "noise": "Noise (whisper)",
+      "chord": "Chord (choir/robot)"
+    },
+    "Section": {
+      "tone": "Tone & EQ",
+      "voice": "Voice (pitch & formant)",
+      "character": "Character",
+      "motion": "Motion",
+      "space": "Space",
+      "layers": "Extra voice layers"
+    },
+    "Layer": {
+      "pitch": "Pitch",
+      "formant": "Formant",
+      "gain": "Level",
+      "hp": "HP",
+      "lp": "LP"
+    }
+  }
+}
